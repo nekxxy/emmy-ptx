@@ -1,0 +1,45 @@
+### p00_scalar_add
+[k_add_pointwise] 22 registers
+[k_add_pointwise] PASS  add: max abs err 0.000e+00  (23.744 us)
+### p01_vector_add
+[k_add_pointwise] 22 registers
+[k_add_pointwise] PASS  add: max abs err 0.000e+00  (24.192 us)
+### p02_scale_shift
+[k_add_pointwise] 34 registers
+[k_add_pointwise] PASS  add: max abs err 0.000e+00  (16.384 us)
+### p03_relu_mul
+[k_mul_pointwise] 24 registers
+[k_mul_pointwise] PASS  mul: max abs err 0.000e+00  (16.288 us)
+### r01_array_sum
+[k_sum_1_reduce] 18 registers
+[k_sum_1_reduce] PASS  sum_1: max abs err 3.815e-06  (23.456 us)
+### r02_big_sum
+[k_sum_1_reduce] 18 registers
+[k_sum_1_reduce] PASS  sum_1: max abs err 1.526e-05  (43.328 us)
+### r03_mean
+[k_mean_ffcca3] 18 registers
+[k_mean_ffcca3] PASS  mean: max abs err 9.313e-10  (32.224 us)
+### r04_row_sum
+[k_sum_1_reduce] 20 registers
+[k_sum_1_reduce] PASS  sum_1: max abs err 5.722e-06  (23.936 us)
+### f01_rmsnorm
+[k_mean_cbd1de] 22 registers
+[k_mean_cbd1de] PASS  mul_1: max abs err 1.907e-06  (17.792 us)
+### f02_row_softmax
+[k_softmax_05263d] 25 registers
+[k_softmax_05263d] PASS  softmax: max abs err 1.490e-08  (16.096 us)
+### f03_l2norm
+[k_div_reduce] 22 registers
+[k_div_reduce] PASS  div: max abs err 1.490e-08  (16.16 us)
+### m01_matmul_512
+[k_matmul_2967be] 36 registers
+[k_matmul_2967be] PASS  matmul: max abs err 8.392e-05  (110.592 us)
+### m02_matmul_rect
+[k_matmul] 36 registers
+[k_matmul] PASS  matmul: max abs err 1.144e-05  (16.416 us)
+### a01_attention
+[k_matmul_softmax_reduce_b55365] 128 registers
+[k_matmul_softmax_reduce_b55365] PASS  matmul_1: max abs err 6.557e-07  (109.408 us)
+### a02_attention_128
+[k_matmul_softmax_reduce_6f0029] 56 registers
+[k_matmul_softmax_reduce_6f0029] PASS  matmul_1: max abs err 4.470e-07  (73.344 us)
